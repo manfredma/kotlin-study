@@ -1,4 +1,4 @@
-package com.turreta.maven.kotlin
+package com.turreta.maven.kotlin.basic
 
 class Boot {
     fun main(args: Array<String>?) {

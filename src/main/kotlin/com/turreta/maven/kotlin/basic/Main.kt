@@ -1,6 +1,6 @@
-package com.turreta.maven.kotlin.hello
+package com.turreta.maven.kotlin.basic.main
 
-import com.turreta.maven.kotlin.Boot
+import com.turreta.maven.kotlin.basic.Boot
 import java.lang.Integer.max
 
 fun sayHello() {

@@ -1,4 +1,4 @@
-package com.turreta.maven.kotlin.method
+package com.turreta.maven.kotlin.basic.method
 
 import java.lang.Integer.max
 

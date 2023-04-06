@@ -1,4 +1,4 @@
-package com.turreta.maven.kotlin.logic
+package com.turreta.maven.kotlin.basic.logic
 
 //Kotlin 中把每一个条件中的最后一行代码作为返回值
 fun largeNumber4(number1: Int, number2: Int): Int {
