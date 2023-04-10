@@ -10,6 +10,9 @@ fun main() {
     // Java 函数式 API 的使用
     testJavaFunApi();
 
+    // 方法引用
+    println(lock("param1", "param2", ::getResult))
+
 }
 
 fun testJavaFunApi() {
@@ -147,4 +150,19 @@ fun testCollectionNormal(): Unit {
 
     println(map1.javaClass)
     println(map2.javaClass)
+}
+
+/**
+ * @param str1 参数1
+ * @param str2 参数2
+ */
+fun getResult(str1: String, str2: String): String = "result is {$str1 , $str2}"
+
+/**
+ * @param p1 参数1
+ * @param p2 参数2
+ * @param method 方法名称
+ */
+fun lock(p1: String, p2: String, method: (str1: String, str2: String) -> String): String {
+    return method(p1, p2)
 }
