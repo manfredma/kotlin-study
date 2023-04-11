@@ -1,5 +1,9 @@
 package com.turreta.maven.kotlin.extend
 
+/**
+ * 运算符重载
+ */
+
 class Money(val value: Int) {
 
     //实现运算符重载 Money + Money
@@ -9,7 +13,7 @@ class Money(val value: Int) {
     }
 
     //实现运算符重载 Money + Int
-    operator fun plus(money: Int): Money{
+    operator fun plus(money: Int): Money {
         val sum = value + money
         return Money(sum)
     }
